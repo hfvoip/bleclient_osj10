@@ -367,7 +367,10 @@ int GAPC_ConnectionReqInd(ke_msg_id_t const msg_id,
     struct gapc_connection_cfm *cfm;
     uint8_t conidx =  KE_IDX_GET(src_id);
 	uint8_t ble_env_index  =  0xFF ;
-	PRINTF("\r\n Connect Ind,conidx=%0x, src_id=%x",conidx,src_id);
+	PRINTF("\r\n Connect Ind,conidx=%0x, src_id=%x,conhdl:%d,peer addr:0x %x %x %x %x %x %x",conidx,src_id,param->conhdl,param->peer_addr.addr[0],
+			param->peer_addr.addr[1],param->peer_addr.addr[2],param->peer_addr.addr[3],param->peer_addr.addr[4],
+			param->peer_addr.addr[5]
+			);
 	//判断addrtype,addr 是属于哪一个
 	for (int i=0;i<APP_NB_PEERS;i++) {
 		if (
@@ -414,9 +417,9 @@ int GAPC_ConnectionReqInd(ke_msg_id_t const msg_id,
         ke_msg_send(cfm);
 
         /* Increasing MTU Capability and throughput rate */
-        Connection_SetPktLength(conidx, MTU_SIZE);
-        Connection_ExchangeMTUCmd(conidx);
-        Connection_SetPHY(conidx,GAP_RATE_LE_2MBPS, GAP_RATE_LE_2MBPS);
+      //  Connection_SetPktLength(conidx, MTU_SIZE);
+     //   Connection_ExchangeMTUCmd(conidx);
+    //    Connection_SetPHY(conidx,GAP_RATE_LE_2MBPS, GAP_RATE_LE_2MBPS);
 
         /* Start enabling client services */
         BLE_SetServiceState(true, conidx);
@@ -479,6 +482,8 @@ int GAPC_DisconnectInd(ke_msg_id_t const msg_id,
     /* Go to the ready state */
 	uint8_t conidx =  KE_IDX_GET(src_id);
 
+	PRINTF("\r\n Disc Ind,conidx=%0x, src_id=%x,conhdl:%d,reason:%d",conidx,src_id,param->conhdl,param->reason
+				);
 	//或者这个
 	// conidx = param->conhdl;
 		uint8_t ble_env_index  =  Find_Ble_Env(conidx);
@@ -643,6 +648,7 @@ void Connection_SendStartCmd(void)
     ble_env.state = APPM_CONNECTING;
 #endif
 
+    PRINTF("\r\n Connection_SendStartCmd");
     struct gapm_start_connection_cmd *cmd;
     cmd = KE_MSG_ALLOC_DYN(GAPM_START_CONNECTION_CMD, TASK_GAPM, TASK_APP,
                              gapm_start_connection_cmd,

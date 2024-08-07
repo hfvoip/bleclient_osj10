@@ -139,6 +139,7 @@ void  ADC_BUTTON_Handler() {
 	//PRINTF("\r\n ad val:%d",ad_val);
 	ad_val = app_batt_read.batt_lvl_sum_mV ;
 	ad_val = round(ad_val*0.01);
+	//PRINTF("\r\n ad_val:%d",ad_val);
 
 	if (ad_val >=160) {
 		 Sys_Delay_ProgramROM(0.2 * SystemCoreClock);
@@ -149,31 +150,32 @@ void  ADC_BUTTON_Handler() {
 		Dec_Volume();
 
 	} else
-	if  (ad_val >130) {
+	if  (ad_val >120) {
 		// V +
 		Inc_Volume();
 	} else
-	if (ad_val >100) {
+	if (ad_val >90) {
 		// D
 		Change_Mode(3);
 	} else
-	if (ad_val >70) {
+	if (ad_val >60) {
 			// MODE C
 		Change_Mode(2);
 	} else
-	if (ad_val >30) {
+	if (ad_val >25) {
 			// MODE B
 		Change_Mode(1);
 	} else
-	if (ad_val >3) {
+	if (ad_val >1) {
 			// MODE A
 		Change_Mode(0);
 	}
+	 Sys_Watchdog_Refresh();
 
     //We need
 	 //Process_buttonevt();
 	//处理完，等待用户松手，不然再次执行到了这里
-	 Sys_Delay_ProgramROM(0.2 * SystemCoreClock);
+	 Sys_Delay_ProgramROM(1 * SystemCoreClock);
 
 
-}
+};

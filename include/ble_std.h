@@ -46,7 +46,7 @@ extern "C"
 /* Bluetooth device address type */
 #define BD_TYPE_PUBLIC                  0
 #define BD_TYPE_PRIVATE                 1
-#define BD_ADDRESS_TYPE                 BD_TYPE_PRIVATE
+#define BD_ADDRESS_TYPE                 BD_TYPE_PUBLIC
 
 /* Length of Bluetooth address (in octets) */
 #define BDADDR_LENGTH                   6
@@ -62,7 +62,7 @@ extern "C"
 #define APP_NB_PEERS                     2 /* 1-4 */
 
 /* Bluetooth address of the peer device */
-#define DIRECT_PEER_BD_ADDRESS1          { 0xD5, 0x4D, 0xAA, 0xBF, 0xC0, 0x60 }
+#define DIRECT_PEER_BD_ADDRESS1          { 0x61, 0x73, 0xAA, 0xBF, 0xC0, 0x60 }
 #define DIRECT_PEER_BD_ADDRESS_TYPE1     BD_TYPE_PUBLIC
 
 #define DIRECT_PEER_BD_ADDRESS2          { 0x94, 0x11, 0x22, 0xff, 0xff, 0xE6 }
@@ -78,8 +78,9 @@ extern "C"
 #define SCAN_WINDOW                     50
 
 /* Set the connection interval to 7.5ms and slave latency to zero */
+//这个CON_INTERVAL_MAX 原来是6,导致disconnected ，现在改为60
 #define CON_INTERVAL_MIN                6
-#define CON_INTERVAL_MAX                6
+#define CON_INTERVAL_MAX                60
 #define CON_SLAVE_LATENCY               0
 
 /* Set supervisory timeout to 3s */

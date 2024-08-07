@@ -321,11 +321,14 @@ int GATTC_EvtInd(ke_msg_id_t const msg_id, struct
 {
     overflow_packet_t *traverse = NULL;
     unsigned int flag;
-    PRINTF("\r\n Notified:handle:=%d,length=%d",param->handle, param->length);
+
+    uint8_t conidx =  KE_IDX_GET(src_id);
+
+    PRINTF("\r\n Notified:dst=%d,src_id=%d,conidx:%d,handle:=%d,length=%d\r\n",dest_id,src_id,conidx,param->handle, param->length);
     for (int i=0;i<param->length;i++)
     		PRINTF(" %0x",param->value[i]);
     PRINTF("  \r\n");
-    uint8_t conidx =  KE_IDX_GET(src_id);
+
   		uint8_t ble_env_index  =  Find_Ble_Env(conidx);
   		if (ble_env_index ==0xFF) return KE_MSG_CONSUMED;
 

@@ -61,7 +61,7 @@ int main(void)
             }
         }
 
-#if 1
+#if 0
         if (arr_ble_env[0].state == APPM_CONNECTED)
         {
 #if 0
@@ -120,6 +120,7 @@ int main(void)
 #endif
         /* Refresh the watchdog timer */
         Sys_Watchdog_Refresh();
+        ADC_BUTTON_Handler();
 
         /* Wait for an event before executing the scheduler again */
         SYS_WAIT_FOR_EVENT;
