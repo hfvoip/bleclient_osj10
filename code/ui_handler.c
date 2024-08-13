@@ -100,10 +100,16 @@ void Change_Mode(uint8_t mem_idx) {
 			if  (btn_flag_7 ==0)  {
 				J10_SendWriteCmd(0,1,sendcmd,4);
 				Sys_Watchdog_Refresh();
+				Sys_Delay_ProgramROM(0.1 * SystemCoreClock);
+				J10_SendReadCmd(0,1);
+				Sys_Watchdog_Refresh();
 
 			}
 			if  (btn_flag_11 ==0)  {
 				J10_SendWriteCmd(1,1,sendcmd,4);
+				Sys_Watchdog_Refresh();
+				Sys_Delay_ProgramROM(0.1 * SystemCoreClock);
+				J10_SendReadCmd(1,1);
 				Sys_Watchdog_Refresh();
 
 			}
@@ -143,6 +149,7 @@ void  ADC_BUTTON_Handler() {
 
 	if (ad_val >=160) {
 		 Sys_Delay_ProgramROM(0.2 * SystemCoreClock);
+
 		 return ;
 	}else
 	if  (ad_val >140) {

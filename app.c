@@ -64,14 +64,14 @@ int main(void)
 #if 0
         if (arr_ble_env[0].state == APPM_CONNECTED)
         {
-#if 0
+
             if ((basc_support_env.enable == true) && (app_env.send_batt_req >=
                                                       25))
             {
                 app_env.send_batt_req = 0;
                 Batt_SendReadInfoReq(arr_ble_env[0].conidx, 0, BASC_BATT_LVL_VAL);
             }
-#endif
+
 
             J10_SendReadCmd(0,1);
             Sys_Watchdog_Refresh();
@@ -121,6 +121,7 @@ int main(void)
         /* Refresh the watchdog timer */
         Sys_Watchdog_Refresh();
         ADC_BUTTON_Handler();
+
 
         /* Wait for an event before executing the scheduler again */
         SYS_WAIT_FOR_EVENT;

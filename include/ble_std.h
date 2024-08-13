@@ -65,8 +65,8 @@ extern "C"
 #define DIRECT_PEER_BD_ADDRESS1          { 0x61, 0x73, 0xAA, 0xBF, 0xC0, 0x60 }
 #define DIRECT_PEER_BD_ADDRESS_TYPE1     BD_TYPE_PUBLIC
 
-#define DIRECT_PEER_BD_ADDRESS2          { 0x94, 0x11, 0x22, 0xff, 0xff, 0xE6 }
-#define DIRECT_PEER_BD_ADDRESS_TYPE2     BD_TYPE_PRIVATE
+#define DIRECT_PEER_BD_ADDRESS2          { 0xd5, 0x4d, 0xaa, 0xbf, 0xc0, 0x60 }
+#define DIRECT_PEER_BD_ADDRESS_TYPE2     BD_TYPE_PUBLIC
 
 
 /* ON SEMICONDUCTOR Company ID */

@@ -281,11 +281,14 @@ int GATTC_ReadInd(ke_msg_id_t const msg_id, struct
                   ke_task_id_t const dest_id,
                   ke_task_id_t const src_id)
 {
-	PRINTF("\r\n Read Ind: hdl=%d,length=%d",param->handle,param->length);
-	for (int i=0;i<param->length;i++)
-		PRINTF(" %0x",param->value[i]);
-	PRINTF("  \r\n");
+
 	  uint8_t conidx =  KE_IDX_GET(src_id);
+
+	  PRINTF("\r\n Read Ind: src_id=%d,dest_id=%d,conidx=%d,hdl=%d,length=%d\r\n",src_id,dest_id,conidx,param->handle,param->length);
+	  	for (int i=0;i<param->length;i++)
+	  		PRINTF(" %0x",param->value[i]);
+	  	PRINTF("  \r\n");
+
 		uint8_t ble_env_index  =  Find_Ble_Env(conidx);
 		if (ble_env_index ==0xFF) return KE_MSG_CONSUMED;
 

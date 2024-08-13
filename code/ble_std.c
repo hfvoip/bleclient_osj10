@@ -423,6 +423,14 @@ int GAPC_ConnectionReqInd(ke_msg_id_t const msg_id,
 
         /* Start enabling client services */
         BLE_SetServiceState(true, conidx);
+
+        //另一个还没连接
+        if (arr_ble_env[1-ble_env_index].state !=APPM_CONNECTED) {
+        	J10_Connection_SendStartCmd(1-ble_env_index);
+
+        }
+
+
     }
     else
     {
@@ -649,6 +657,7 @@ void Connection_SendStartCmd(void)
 #endif
 
     PRINTF("\r\n Connection_SendStartCmd");
+#if 1
     struct gapm_start_connection_cmd *cmd;
     cmd = KE_MSG_ALLOC_DYN(GAPM_START_CONNECTION_CMD, TASK_GAPM, TASK_APP,
                              gapm_start_connection_cmd,
@@ -662,8 +671,39 @@ void Connection_SendStartCmd(void)
 
     arr_ble_env[0].state = APPM_CONNECTING;
     arr_ble_env[1].state = APPM_CONNECTING;
+#endif
+
+  //  J10_Connection_SendStartCmd(0);
+
 
 }
+
+void J10_Connection_SendStartCmd(int peer_idx)
+{
+
+
+    PRINTF("\r\n Connection_SendStartCmd:%d", peer_idx);
+    struct gapm_start_connection_cmd *cmd;
+    cmd = KE_MSG_ALLOC_DYN(GAPM_START_CONNECTION_CMD, TASK_GAPM, TASK_APP,
+                             gapm_start_connection_cmd,
+                             (startConnectionCmd.nb_peers * sizeof(struct gap_bdaddr)));
+
+
+      memcpy(cmd, &startConnectionCmd, (sizeof(struct gapm_start_connection_cmd) +
+              (startConnectionCmd.nb_peers * sizeof(struct gap_bdaddr))));
+
+      if (peer_idx ==0) cmd->peers[1].addr.addr[0] = 0xFF;
+      if (peer_idx ==1) cmd->peers[0].addr.addr[0] = 0xFF;
+
+
+      ke_msg_send(cmd);
+
+    arr_ble_env[peer_idx].state = APPM_CONNECTING;
+
+
+}
+
+
 
 /* ----------------------------------------------------------------------------
  * Function      : void BLE_SetServiceState(bool enable, uint8_t conidx)

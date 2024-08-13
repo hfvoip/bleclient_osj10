@@ -1,0 +1,510 @@
+
+00>  BLE CLIENT START ...
+00>  Connection_SendStartCmd
+00>  Connect Ind,conidx=0, src_id=9,conhdl:0,peer addr:0x D5 4D AA BF C0 60
+00>  Connection_SendStartCmd:0
+00>  DiscSvcInd: src_id=7,conidx=0,ble_env_index=1
+00>  DiscCharInd: src_id=7,conidx=0 
+00>  attnum:0,attr_hdl:11, pointer_hdl:12 
+00>  DiscCharInd: src_id=7,conidx=0 
+00>  attnum:1,attr_hdl:15, pointer_hdl:16 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  DiscCharInd: src_id=7,conidx=0 
+00>  DiscCharInd: src_id=7,conidx=0 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Connect Ind,conidx=1, src_id=109,conhdl:1,peer addr:0x 61 73 AA BF C0 60
+00>  DiscSvcInd: src_id=107,conidx=1,ble_env_index=0
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  attnum:0,attr_hdl:11, pointer_hdl:12 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  attnum:1,attr_hdl:15, pointer_hdl:16 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 F 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 6 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 F 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 6 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 6 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 F 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  3 0 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 0 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  1 0 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 0 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 3 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 6 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  0 9 0  
+00> 
+00>  sendwritecmd: hdl=16
+00>  sendwritecmd: hdl=16
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  0 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Disc Ind,conidx=1, src_id=109,conhdl:1,reason:8
+00>  Connection_SendStartCmd
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Connect Ind,conidx=1, src_id=109,conhdl:1,peer addr:0x 61 73 AA BF C0 60
+00>  Connection_SendStartCmd:1
+00>  DiscSvcInd: src_id=107,conidx=1,ble_env_index=0
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  attnum:0,attr_hdl:11, pointer_hdl:12 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  attnum:1,attr_hdl:15, pointer_hdl:16 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  DiscCharInd: src_id=107,conidx=1 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=7,conidx:0,handle:=12,length=3
+00>  2 9 0  
+00> 
+00>  Notified:dst=4,src_id=263,conidx:1,handle:=12,length=3
